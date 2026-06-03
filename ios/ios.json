@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"PadMenu\"><param name=\"ios-package\" value=\"PadMenu\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-padmenu": {
+      "PACKAGE_NAME": "cedtris.menudemo"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-padmenu.PadMenu",
+      "file": "plugins/cordova-plugin-padmenu/www/PadMenu.js",
+      "pluginId": "cordova-plugin-padmenu",
+      "clobbers": [
+        "PadMenu"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-padmenu": "1.0.0"
+  }
+}
